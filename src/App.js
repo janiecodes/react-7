@@ -1,5 +1,6 @@
 import React from 'react'
 import Hooks from './Components/Hooks/Hooks'
+import Counter from './Components/Hooks/Counter'
 import Hocs from './Components/HOCS/Hocs'
 import RenderProps from './Components/RenderProps/RenderProps'
 import './App.css'
@@ -10,6 +11,7 @@ function App() {
       <header className="header">
         <h1 className="header-text">React 7 Lecture - Advanced React</h1>
       </header>
+      <Counter/>
       <Hooks />
       <Hocs />
       <RenderProps />
