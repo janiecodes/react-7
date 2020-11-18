@@ -2,6 +2,7 @@ import React from 'react'
 import BadButton from './BadButton'
 import Square from './Square'
 import '../style.css'
+import GoodButton from './GoodButton'
 
 const Hocs = props => {
   return (
@@ -17,7 +18,11 @@ const Hocs = props => {
         </a>
       </h1>
       <BadButton />
-      <BadButton darkMode />
+      <BadButton darkMode /> 
+      {/* darkMode is a prop, it's the same as passing darkMode={true} */}
+      <br/>
+      <GoodButton/>
+      <GoodButton darkMode/>
       <Square />
     </section>
   )

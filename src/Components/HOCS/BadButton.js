@@ -18,6 +18,9 @@ const styles = {
   },
 }
 
+//BadButton is a functional component
+//we made a style variable that is equal to the style above
+//if there is a prop in BadButton 
 const BadButton = props => {
   let style = { ...styles.default }
   //Styles will default to the default styling
@@ -33,3 +36,4 @@ const BadButton = props => {
 }
 
 export default BadButton
+//THIS IS THE SAME AS THE styleHOC

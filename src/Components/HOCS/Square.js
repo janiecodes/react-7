@@ -1,4 +1,5 @@
 import React from 'react'
+import styleHOC from './styleHOC'
 
 const Square = props => {
   return (
@@ -7,4 +8,4 @@ const Square = props => {
     </div>
   )
 }
-export default Square
+export default styleHOC(Square)
