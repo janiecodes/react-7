@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 
 export default () => {
     const [movies, setMovies] = useState([
@@ -11,12 +11,16 @@ export default () => {
     const [input, setInput] = useState('')
 
     //One way to do it but this can be more confusing
-    //const [state, useState] = useState({movies: [], inout: ''})
+    //const [state, useState] = useState({movies: [], input: ''})
+
+    // useEffect(() => {
+    //     don't forget the dependency array or your code will crash
+    // }, [])
 
     return(
         <div>
             {movies.map((movie, index) => {
-                return <h2 key={movie + index} >{movies}</h2> 
+                return <h2 key={movie + index} >{movie}</h2> 
                 //key is only for React so it knows what you're mapping over
             })}
             <input
