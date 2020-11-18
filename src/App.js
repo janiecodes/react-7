@@ -20,3 +20,17 @@ function App() {
 }
 
 export default App
+
+//The Render Prop example written out
+//<RenderProps render={() => {
+//   <div>I am the captain now</div>
+// }}/>
+
+{/* 
+<Switch>
+  <Route exact path='/' component={RenderProps}/>
+  <Route render={() => {
+    <div>Page 4040 Not Found</div>/>
+    instead of putting a component in, this is a way how Render Props could be used
+</Switch> 
+*/}
